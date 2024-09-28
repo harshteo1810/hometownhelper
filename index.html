@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navbar</title>
+    <title>Hometown Helpers</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
@@ -30,11 +30,11 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">About Us</a>
+                    <a class="nav-link active" href="#about-section">About Us</a>
                 </li>
                 <!-- Dropdown Menu for Services -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#services-section"" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Services
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
@@ -71,8 +71,8 @@
         <div class="carousel-item active slide-1">
             <img src="https://th.bing.com/th/id/R.ab86f4c9b58d6cc32d86b325f50c89ea?rik=Gqc85kXVXt3Z3w&riu=http%3a%2f%2fwww.homeclean.com.au%2fwp-content%2fuploads%2f2017%2f04%2fDollarphotoclub_787560251.jpg&ehk=%2f0cYds4lBvXki6zJuO1dNz7Gu%2fLnvCAhttuvPU0KlkU%3d&risl=&pid=ImgRaw&r=0" alt="">
             <div class="carousel-caption">
-                <h1>Cleaning Services</h1>
-                <p>We provide home or offices cleaning sevices at you doorstep.</p>
+                <div class="heading1"><h1>Cleaning Services</h1></div>
+                <div class="p1"><p>We provide home or offices cleaning sevices at you doorstep.</p></div>
                 <a href="#" class="btn btn-primary">Read More</a>
             </div>
         </div>
@@ -89,7 +89,7 @@
         <div class="carousel-item slide-3">
             <img src="https://shinymodern.com/wp-content/uploads/2021/03/shutterstock_271213580-728x496.jpg" alt="">
             <div class="carousel-caption">
-                <h1>Plubers Services</h1>
+                <h1>Plumber Services</h1>
                 <p>We provide all type of plumbing sevices at you doorstep.</p>
                 <a href="#" class="btn btn-primary">Read More</a>
             </div>
@@ -131,8 +131,8 @@
                 <div class="tab-content" id="aboutTabsContent">
                     <!-- Tab 1: Our Company -->
                     <div class="tab-pane fade show active" id="company" role="tabpanel" aria-labelledby="company-tab">
-                        <h3>About Our Company</h3>
-                        <P>"Welcome to Hometown Helpers, your one-stop solution for local services. Whether you need a plumber, electrician, or handyman, find trusted professionals near you. Browse, book, and get the job done, hassle-free. Connecting you with quality services right in your neighborhood!"</P>
+                        <h3 class="company-55">About Our Company</h3>
+                        <P class="p2">"Welcome to Hometown Helpers, your one-stop solution for local services. Whether you need a plumber, electrician, or handyman, find trusted professionals near you. Browse, book, and get the job done, hassle-free. Connecting you with quality services right in your neighborhood!"</P>
                         <a href="#" class="btn btn-primary">Learn More</a>
                     </div>
                     <!-- Tab 2: Our Mission -->
@@ -170,49 +170,49 @@
         <div class="row">
             <!-- Service 1 -->
             <div class="col-lg-3 col-md-6 mb-4">
-                <div class="service-box1">
+                <div class="service-box1 box">
                     <div class="service-icon">
                         <i class="bi bi-gear-fill"></i> <!-- Bootstrap Icon -->
                     </div>
-                    <h3 class="service-heading">Service 1</h3>
+                    <h3 class="service-heading">Electrician</h3>
                     <p class="service-description">We provide innovative solutions to enhance your business performance and drive success.</p>
-                    <a href="#" class="btn btn-primary service-btn">Read More</a>
+                    <a href="http://127.0.0.1:5500/ser.html" class="btn btn-primary service-btn">Workers</a>
                 </div>
             </div>
 
             <!-- Service 2 -->
             <div class="col-lg-3 col-md-6 mb-4">
-                <div class="service-box2">
+                <div class="service-box2 box">
                     <div class="service-icon">
                         <i class="bi bi-lightbulb-fill"></i> <!-- Bootstrap Icon -->
                     </div>
-                    <h3 class="service-heading">Service 2</h3>
+                    <h3 class="service-heading">Carpenter</h3>
                     <p class="service-description">Our team delivers creative and efficient solutions tailored to your specific needs.</p>
-                    <a href="#" class="btn btn-primary service-btn">Read More</a>
+                    <a href="http://127.0.0.1:5500/ser.html" class="btn btn-primary service-btn">Workers</a>
                 </div>
             </div>
 
             <!-- Service 3 -->
             <div class="col-lg-3 col-md-6 mb-4">
-                <div class="service-box3">
+                <div class="service-box3 box">
                     <div class="service-icon">
                         <i class="bi bi-speedometer2"></i> <!-- Bootstrap Icon -->
                     </div>
-                    <h3 class="service-heading">Service 3</h3>
+                    <h3 class="service-heading">Cleaner</h3>
                     <p class="service-description">We work fast and efficiently to deliver outstanding results in record time.</p>
-                    <a href="#" class="btn btn-primary service-btn">Read More</a>
+                    <a href="http://127.0.0.1:5500/ser.html" class="btn btn-primary service-btn">Workers</a>
                 </div>
             </div>
 
             <!-- Service 4 -->
             <div class="col-lg-3 col-md-6 mb-4">
-                <div class="service-box4">
+                <div class="service-box4 box">
                     <div class="service-icon">
                         <i class="bi bi-globe"></i> <!-- Bootstrap Icon -->
                     </div>
-                    <h3 class="service-heading">Service 4</h3>
+                    <h3 class="service-heading">Plumber</h3>
                     <p class="service-description">Our global reach ensures your business can scale and succeed anywhere in the world.</p>
-                    <a href="#" class="btn btn-primary service-btn">Read More</a>
+                    <a href="http://127.0.0.1:5500/ser.html" class="btn btn-primary service-btn">Workers</a>
                 </div>
             </div>
         </div>
@@ -235,7 +235,7 @@
                     <div class="review-icon">
                         <i class="bi bi-person-circle"></i> <!-- Bootstrap Icon -->
                     </div>
-                    <h3 class="review-heading">Review 1</h3>
+                    <h3 class="review-heading">Sarah Johnson</h3>
                     <p class="review-description">The service was excellent and exceeded our expectations. The team was highly professional.</p>
                     <a href="#" class="btn btn-primary review-btn">Read More</a>
                 </div>
@@ -247,7 +247,7 @@
                     <div class="review-icon">
                         <i class="bi bi-person-circle"></i> <!-- Bootstrap Icon -->
                     </div>
-                    <h3 class="review-heading">Review 2</h3>
+                    <h3 class="review-heading">Michael Smith</h3>
                     <p class="review-description">Outstanding experience! They were quick, efficient, and delivered great value for the price.</p>
                     <a href="#" class="btn btn-primary review-btn">Read More</a>
                 </div>
@@ -259,7 +259,7 @@
                     <div class="review-icon">
                         <i class="bi bi-person-circle"></i> <!-- Bootstrap Icon -->
                     </div>
-                    <h3 class="review-heading">Review 3</h3>
+                    <h3 class="review-heading">David Patel</h3>
                     <p class="review-description">Highly recommend! The team was attentive, and the results were impressive.</p>
                     <a href="#" class="btn btn-primary review-btn">Read More</a>
                 </div>
@@ -271,7 +271,7 @@
                     <div class="review-icon">
                         <i class="bi bi-person-circle"></i> <!-- Bootstrap Icon -->
                     </div>
-                    <h3 class="review-heading">Review 4</h3>
+                    <h3 class="review-heading">Emily Chen</h3>
                     <p class="review-description">A wonderful experience! Their service is second to none, and I will definitely use them again.</p>
                     <a href="#" class="btn btn-primary review-btn">Read More</a>
                 </div>
@@ -336,6 +336,36 @@
 </section>
 <!-- Bootstrap JS and Popper.js -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+    ScrollReveal({
+        reset: true,
+        distance: "70px",
+        duration: 2000,
+        delay: 200,
+
+
+    });
+    ScrollReveal().reveal(".heading1", { delay: 50, origin: "top" });
+    ScrollReveal().reveal(".p1", { delay: 50, origin: "left", });
+    ScrollReveal().reveal(".about-heading", { delay: 50, origin: "left"});
+    ScrollReveal().reveal(".services-heading", { delay: 50, origin: "top"});
+    ScrollReveal().reveal(".company-55", { delay: 50, origin: "top"});
+    ScrollReveal().reveal(".services-discription", { delay: 70, origin: "down"});
+    ScrollReveal().reveal(".p2", { delay: 70, origin: "down"});
+    ScrollReveal().reveal(".review-box", { delay: 70, origin: "top",interval: 200});
+
+    ScrollReveal().reveal(".contact-heading", { delay: 50, origin: "top"});
+    ScrollReveal().reveal(".contact-description", { delay: 70, origin: "down"});
+
+    ScrollReveal().reveal(".service-description", { delay: 50, origin: "top"});
+
+    ScrollReveal().reveal(".box", { delay: 50, origin: "left", interval: 200 });
+    
+
+
+
+</script>
 
 </body>
 </html>

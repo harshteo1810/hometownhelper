@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-image: url("https://static.vecteezy.com/system/resources/previews/006/852/804/original/abstract-blue-background-simple-design-for-your-website-free-vector.jpg"); */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://www-images.christianitytoday.com/images/45217.jpg?h=220&w=220'); /* Replace with your background image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container {
+    padding: 20px;
+    background: rgba(240, 236, 236, 0.7);
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 50px auto;
+    overflow: auto; /* Add overflow for scrolling */
+    height: calc(100vh - 100px); /* Adjust to fill page height */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #ccc; /* Table border */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc; /* Cell border */
+}
+
+th {
+    background-color: #fcf3f3;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f3eded;
+}
+
+tbody tr:hover {
+    background-color: #efeded;
+}
