@@ -2,7 +2,12 @@
 *{
     font-family: "Poppins", sans-serif;
 
-}.navbar {
+}
+body{
+    background-image: linear-gradient(375deg ,rgb(95, 95, 95),rgb(62, 61, 61),black);
+
+}
+.navbar {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -169,7 +174,7 @@
  .services-section {
     padding: 80px 0;
     text-align: center;
-    background-image: linear-gradient(to bottom,rgb(82, 82, 82),black);
+    /* background-image: linear-gradient(to bottom,rgb(82, 82, 82),black); */
 
 
 }
@@ -190,15 +195,50 @@
 
 }
 
-.service-box {
+.service-box1 {
     text-align: center;
     padding: 30px;
-    border: 1px solid #ddd;
+    border: 1px solid #ce7979;
     border-radius: 8px;
     transition: box-shadow 0.3s ease;
-    background-color: #fff;
+    background-color: #a1eff6;
+    background-image: url("electrician.jpeg");
+    background-size: cover;
+    
 }
-
+.service-box2 {
+    text-align: center;
+    padding: 30px;
+    border: 1px solid #ce7979;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+    background-color: #a1eff6;
+    background-image: url("carpenter.jpeg");
+    background-size: cover;
+    
+}
+.service-box3 {
+    text-align: center;
+    padding: 30px;
+    border: 1px solid #ce7979;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+    background-color: #a1eff6;
+    background-image: url("cleaner.jpeg");
+    background-size: cover;
+    
+}
+.service-box4 {
+    text-align: center;
+    padding: 30px;
+    border: 1px solid #ce7979;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+    background-color: #a1eff6;
+    background-image: url("plumber.jpeg");
+    background-size: cover;
+    
+}
 .service-box:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
@@ -213,12 +253,15 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 15px;
+    color: #f4f2f2;
+    text-shadow: 2px 2px 7px rgb(3, 3, 3);
 }
 
 .service-description {
     font-size: 1rem;
     margin-bottom: 20px;
-    color: #777;
+    color: #f4f2f2;
+    text-shadow: 2px 2px 7px gray;
 }
 
 .service-btn {
@@ -246,10 +289,10 @@
 .review-box {
     text-align: center;
     padding: 30px;
-    border: 1px solid #ddd;
+    border: 1px solid #f4f1f1;
     border-radius: 8px;
     transition: box-shadow 0.3s ease;
-    background-color: #fff;
+    background-color: #8692c8;
 }
 
 .review-box:hover {
@@ -302,13 +345,13 @@
 .contact-form {
     padding: 30px;
     border-radius: 8px;
-    background-color: #f8f9fa;
+    background-color: #5c7b99;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .contact-details {
     padding: 30px;
-    background-color: #fff;
+    background-color: #e1bcbc;
     border-radius: 8px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
@@ -345,4 +388,37 @@ iframe {
     height: 100%;
     width: 100%;
 
+}
+.reviews-section{
+    background-image: linear-gradient(375deg ,rgb(95, 95, 95),rgb(62, 61, 61),black);
+}
+.contact-section{
+    background-image: linear-gradient(375deg ,rgb(95, 95, 95),rgb(62, 61, 61),black);
+
+}
+.reviews-heading{
+    color: white;
+    text-shadow: 2px 2PX 5PX black;
+}
+.reviews-description{
+    color: white;
+    text-shadow: 2px 2PX 5PX black;
+}
+.contact-heading{
+    color: white;
+    text-shadow: 2px 2PX 5PX black;
+
+}
+.contact-description{
+    color: white;
+    text-shadow: 2px 2PX 5PX black;
+}
+.review-box{
+    background-image: linear-gradient(375deg ,rgb(175, 174, 174),rgb(136, 136, 136),rgb(32, 32, 88));
+}
+.review-description{
+    color: white;
+}
+.review-heading{
+    color: white
 }
