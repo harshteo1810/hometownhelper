@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navbar Container -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <!-- Left Side: Logo -->
+         <div class="logo">
+            <a class="navbar-brand" href="#">
+                <img src="Screenshot 2024-09-28 120312.png" alt="Logo" width="100%" height="100%">
+            </a>
+         </div>
+       
+
+        <!-- Button to toggle navbar collapse on mobile/tablet -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Middle Side: Links -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">About Us</a>
+                </li>
+                <!-- Dropdown Menu for Services -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                        <li><a class="dropdown-item" href="#">CLEANER</a></li>
+                        <li><a class="dropdown-item" href="#">PLUMBER</a></li>
+                        <li><a class="dropdown-item" href="#">ELECTRICIAN</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Right Side: Sign Up & Login Buttons -->
+        <div class="d-flex">
+            <a href="#" class="btn btn-outline-primary me-2">Sign Up</a>
+            <a href="#" class="btn btn-primary">Login</a>
+        </div>
+    </div>
+</nav>
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#heroCarousel" data-bs-slide-to="1"></li>
+        <li data-bs-target="#heroCarousel" data-bs-slide-to="2"></li>
+    </ol>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active slide-1">
+            <img src="https://th.bing.com/th/id/R.ab86f4c9b58d6cc32d86b325f50c89ea?rik=Gqc85kXVXt3Z3w&riu=http%3a%2f%2fwww.homeclean.com.au%2fwp-content%2fuploads%2f2017%2f04%2fDollarphotoclub_787560251.jpg&ehk=%2f0cYds4lBvXki6zJuO1dNz7Gu%2fLnvCAhttuvPU0KlkU%3d&risl=&pid=ImgRaw&r=0" alt="">
+            <div class="carousel-caption">
+                <h1>Cleaning Services</h1>
+                <p>We provide home or offices cleaning sevices at you doorstep.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item slide-2">
+            <img src="https://resources.callthread.com/hubfs/Home-Services.png" alt="">
+            <div class="carousel-caption">
+                <h1>Electrician Services</h1>
+                <p>We provide all type of electrician sevices at you doorstep.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-item slide-3">
+            <img src="https://shinymodern.com/wp-content/uploads/2021/03/shutterstock_271213580-728x496.jpg" alt="">
+            <div class="carousel-caption">
+                <h1>Plubers Services</h1>
+                <p>We provide all type of plumbing sevices at you doorstep.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls for arrows -->
+    <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </a>
+</div>
+<!-- About Section -->
+<section class="about-section">
+    <div class="container">
+        <div class="row">
+            <!-- Left Side: Tabs and Content -->
+            <div class="col-lg-6">
+                <h2 class="about-heading">About Us</h2>
+                
+                <!-- Tabs Navigation -->
+                <ul class="nav nav-tabs mb-3" id="aboutTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="company-tab" data-bs-toggle="tab" data-bs-target="#company" type="button" role="tab" aria-controls="company" aria-selected="true">Our Company</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="mission-tab" data-bs-toggle="tab" data-bs-target="#mission" type="button" role="tab" aria-controls="mission" aria-selected="false">Our Mission</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="vision-tab" data-bs-toggle="tab" data-bs-target="#vision" type="button" role="tab" aria-controls="vision" aria-selected="false">Our Vision</button>
+                    </li>
+                </ul>
+
+                <!-- Tabs Content -->
+                <div class="tab-content" id="aboutTabsContent">
+                    <!-- Tab 1: Our Company -->
+                    <div class="tab-pane fade show active" id="company" role="tabpanel" aria-labelledby="company-tab">
+                        <h3>About Our Company</h3>
+                        <P>"Welcome to Hometown Helpers, your one-stop solution for local services. Whether you need a plumber, electrician, or handyman, find trusted professionals near you. Browse, book, and get the job done, hassle-free. Connecting you with quality services right in your neighborhood!"</P>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                    <!-- Tab 2: Our Mission -->
+                    <div class="tab-pane fade" id="mission" role="tabpanel" aria-labelledby="mission-tab">
+                        <h3>About Our Mission</h3>
+                        <P>Our mission is to bridge the gap between customers and local service providers by creating a platform that fosters trust, quality, and convenience. We strive to empower local businesses while delivering exceptional services that improve lives and strengthen communities.</P>                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                    <!-- Tab 3: Our Vision -->
+                    <div class="tab-pane fade" id="vision" role="tabpanel" aria-labelledby="vision-tab">
+                        <h3>About Our Vision</h3>
+                        <P>**Our Vision**  
+                            At [Your Marketplace Name], we envision a world where every community thrives through accessible and reliable local services. We aim to be the leading platform that transforms how people connect with skilled professionals, fostering a network of trust and collaboration. By empowering local businesses and enhancing customer experiences, we aspire to contribute to stronger, more vibrant neighborhoods where everyone can access the help they need.</P>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Image -->
+            <div class="col-lg-6">
+                <img src="https://cdn.dribbble.com/users/1604313/screenshots/6905805/contact-illustration.gif" alt="About Us" class="about-image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services-section">
+    <div class="container">
+        <!-- Section Heading -->
+        <h2 class="services-heading">Our Services</h2>
+        <p class="services-description">
+            We provide a wide range of services to meet the needs of our customers. Whether you're looking for expertise, innovation, or efficiency, we offer the best solutions to drive your business forward.
+        </p>
+
+        <!-- Service Boxes -->
+        <div class="row">
+            <!-- Service 1 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="bi bi-gear-fill"></i> <!-- Bootstrap Icon -->
+                    </div>
+                    <h3 class="service-heading">Service 1</h3>
+                    <p class="service-description">We provide innovative solutions to enhance your business performance and drive success.</p>
+                    <a href="#" class="btn btn-primary service-btn">Read More</a>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="bi bi-lightbulb-fill"></i> <!-- Bootstrap Icon -->
+                    </div>
+                    <h3 class="service-heading">Service 2</h3>
+                    <p class="service-description">Our team delivers creative and efficient solutions tailored to your specific needs.</p>
+                    <a href="#" class="btn btn-primary service-btn">Read More</a>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="bi bi-speedometer2"></i> <!-- Bootstrap Icon -->
+                    </div>
+                    <h3 class="service-heading">Service 3</h3>
+                    <p class="service-description">We work fast and efficiently to deliver outstanding results in record time.</p>
+                    <a href="#" class="btn btn-primary service-btn">Read More</a>
+                </div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="bi bi-globe"></i> <!-- Bootstrap Icon -->
+                    </div>
+                    <h3 class="service-heading">Service 4</h3>
+                    <p class="service-description">Our global reach ensures your business can scale and succeed anywhere in the world.</p>
+                    <a href="#" class="btn btn-primary service-btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="reviews-section"></section>
+    <div class="container">
+        <!-- Section Heading -->
+        <h2 class="reviews-heading">Customers Reviews</h2>
+        <p class="reviews-description">
+            Here's what our customers are saying about our services. We always strive to deliver exceptional results that exceed expectations.
+        </p>
+
+        <!-- Review Boxes -->
+        <div class="row">
+            <!-- Review 1 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="review-box">
+                    <div class="review-icon">
+                        <i class="bi bi-person-circle"></i> <!-- Bootstrap Icon -->
+                    </div>
+                    <h3 class="review-heading">Review 1</h3>
+                    <p class="review-description">The service was excellent and exceeded our expectations. The team was highly professional.</p>
+                    <a href="#" class="btn btn-primary review-btn">Read More</a>
+                </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="review-box">
+                    <div class="review-icon">
+                        <i class="bi bi-person-circle"></i> <!-- Bootstrap Icon -->
+                    </div>
+                    <h3 class="review-heading">Review 2</h3>
+                    <p class="review-description">Outstanding experience! They were quick, efficient, and delivered great value for the price.</p>
+                    <a href="#" class="btn btn-primary review-btn">Read More</a>
+                </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="review-box">
+                    <div class="review-icon">
+                        <i class="bi bi-person-circle"></i> <!-- Bootstrap Icon -->
+                    </div>
+                    <h3 class="review-heading">Review 3</h3>
+                    <p class="review-description">Highly recommend! The team was attentive, and the results were impressive.</p>
+                    <a href="#" class="btn btn-primary review-btn">Read More</a>
+                </div>
+            </div>
+
+            <!-- Review 4 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="review-box">
+                    <div class="review-icon">
+                        <i class="bi bi-person-circle"></i> <!-- Bootstrap Icon -->
+                    </div>
+                    <h3 class="review-heading">Review 4</h3>
+                    <p class="review-description">A wonderful experience! Their service is second to none, and I will definitely use them again.</p>
+                    <a href="#" class="btn btn-primary review-btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact-section"></section>
+    <div class="container">
+        <!-- Section Heading -->
+        <h2 class="contact-heading">Get in Touch with Us</h2>
+        <p class="contact-description">
+            Have any questions or inquiries? Fill out the form below, or contact us directly via phone or email. We're here to help!
+        </p>
+
+        <div class="row">
+            <!-- Contact Form -->
+            <div class="col-lg-6 mb-4">
+                <div class="contact-form">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Contact Details and Map -->
+            <div class="col-lg-6 mb-4">
+                <div class="row">
+                    <!-- Map -->
+                    <div class="col-12 mb-4">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093744!2d144.95373531531864!3d-37.81720997975193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf57793eaecb07400!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1645592701483!5m2!1sen!2sau"
+                            width="100%" height="250" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+
+                    <!-- Contact Query Section -->
+                    <div class="col-12">
+                        <div class="contact-details">
+                            <h5>Contact Information</h5>
+                            <p><i class="bi bi-telephone-fill"></i> Phone: +123 456 7890</p>
+                            <p><i class="bi bi-envelope-fill"></i> Email: info@example.com</p>
+                            <p><i class="bi bi-geo-alt-fill"></i> Address: 123 Main Street, Melbourne, VIC 3000</p>
+                            <p><i class="bi bi-clock-fill"></i> Working Hours: Mon - Fri: 9:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
